@@ -1,0 +1,625 @@
+/* Start all */
+
+/* any button */
+button{
+    width: 181px;
+    height:50px ;
+}
+
+/* any h1 */
+h1 {
+    position: relative;
+}
+
+/* all <p> under every section title */
+.helper{
+    font-size: 18px;
+    color: #999;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+
+/* line under every title */
+.Mytitle1::after , .Mytitle2::after ,.Mytitle3::after,.Mytitle4::after,.Mytitle5::after {
+    content: "";
+    position: absolute;
+    bottom:-35%;
+    left: 48%;
+    border: 1px solid rgba(0, 0, 0, 0.479);
+    width: 50px;
+    border-color: transparent transparent  rgba(0, 0, 0, 0.683) transparent;
+    transition: all .5s
+}
+
+/* color of any <p> */
+p{
+    color: #999;
+
+}
+
+
+h1{margin: 50px;}
+
+
+/* hover on every section title */
+.Mytitle1:hover::after ,
+.Mytitle2:hover::after ,
+.Mytitle3:hover::after ,
+.Mytitle4:hover::after ,
+.Mytitle5:hover::after{
+    transform: scaleX(1.5);
+}
+
+
+/* unstyle any link */
+a{
+    text-decoration: none;
+    color: white;
+    opacity: 70%;
+}
+
+
+/* End All */
+
+
+
+
+
+
+
+
+
+
+/* Start Nav */
+
+.navbar .container .navbar-nav .social {
+    margin-left: 35px;
+}
+
+
+.navbar{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.244);
+}
+
+.carousel-control-prev{
+    position: absolute;
+    left: -5%;
+    top: 0;
+}
+
+
+
+
+.next,
+.prev
+{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    z-index:99;
+    color: white;
+    width: 60px;
+    border: 1px solid white;
+    border-radius: 0 5px 0px 0;
+}
+
+.prev{
+    top: 58%;
+    border-radius: 0 0px 5px 0;
+   
+}
+
+
+.next:hover,
+.prev:hover{
+    background-color: #F25454;
+
+    transition: all .5s;
+}
+
+
+
+/* End Nav */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Home  */
+
+.home .container{
+    margin: 0;
+    padding: 0;
+}
+
+
+.home .go-down {
+    width: 30px;
+    height: 50px;
+    border: 2px solid white;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px ;
+    animation: bounce 1s linear infinite  ;
+
+}
+
+
+
+@keyframes bounce {
+    0%{
+        bottom: 30px;
+    }
+
+    50%{
+        bottom: 60px;
+    }
+    100%{
+        bottom: 30px;
+    }
+}
+
+.home .go-down::after{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    animation: bounce2 1.7s linear infinite ;
+ 
+}
+
+@keyframes bounce2 {
+    0%{
+        bottom: 10px;
+    }
+
+    50%{
+        bottom: 25px;
+    }
+    100%{
+        bottom: 10px;
+    }
+}
+
+
+.fixed-h {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateX(-25%);
+    z-index:999999;
+    font-weight: bold;
+    color: white;
+    
+}
+.fixed-h  h1{
+    font-size: 60px;
+}
+/* End Home */
+
+
+
+
+
+
+
+
+
+
+
+
+/* start fixed side gear */
+
+.setting 
+{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    z-index:99;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+
+.setting:hover .inner-gear{
+
+    visibility: visible;
+
+}
+/* .setting {
+    left: 20%;
+
+} */
+
+
+.inner-gear:hover .gear.inner-gear{
+    visibility: visible;
+
+}
+.inner-gear:hover .gear.setting{
+    left: 20%;
+}
+.inner-gear{
+    background-color: white;
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    left: 0%;
+    top: 30%;
+    padding: 15px;
+    visibility: hidden;
+}
+
+.inner-gear h3{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.red , .blue ,.green ,.turquoise,
+.purple ,.orange ,.yellow,.gray{
+    width: 25px;
+    height: 25px;
+}
+
+
+.red{
+    background-color: #F25454;
+}
+.blue{
+    background-color: #4E9CB5;
+}
+.green{
+    background-color: #24BCA4;
+}
+.turquoise{
+    background-color: rgb(70,202,215);
+}
+.purple{
+    background-color: #C86F98;
+}
+.orange{
+    background-color: #EE8F67 ;
+}
+.yellow{
+    background-color: #E4D20C ;
+}
+.gray{
+    background-color: #6B798F;
+}
+
+
+/* end fixed side gear */
+
+
+
+
+
+
+
+
+
+
+
+/* Start About */
+
+.Mytitle1:before{
+    content: "A";
+    position: absolute;
+    font-size: 2em;
+    opacity: .06;
+    top: -45px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+/* End About*/
+
+
+
+
+
+
+
+
+/* Start Our Team */
+
+
+.Mytitle2::before{
+    content: "O";
+    position: absolute;
+    font-size: 2em;
+    opacity: .06;
+    top: -45px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+.OurTeam .card{
+    border: none;
+}
+
+/* End Our Team */
+
+
+
+
+
+
+
+
+
+
+
+/* Start Service */
+
+.Services{
+    background-color: #FAFAFA;
+    padding: 100px 0px;
+}
+
+.Services .icon{
+    font-size: 30px;
+}
+
+.Mytitle3::before{
+    content: "S";
+    position: absolute;
+    font-size: 2em;
+    opacity: .06;
+    top: -45px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+
+.Services .info-group p {
+    width: 90%;
+}
+
+
+.Services .info-group:hover h4{
+    color: #F25454;
+    transition: all .4s;
+
+}
+
+
+
+
+
+/* End Services */
+
+
+
+
+
+/* Start Client Review */
+.Mytitle4::before
+{
+    content: "C";
+    position: absolute;
+    font-size: 2em;
+    opacity: .06;
+    top: -45px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* End Client Review */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Get In Touch */
+    
+.touch .icon {
+    font-size: 40px;
+}
+
+
+.Mytitle5::before{
+    content: "G";
+    position: absolute;
+    font-size: 2em;
+    opacity: .06;
+    top: -45px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+.touch {
+    background-color: #FAFAFA;
+    /* padding: 75px; */
+    
+}
+
+.touch .line1:hover h3,
+.touch .line2:hover h3,
+.touch .line3:hover h3
+{
+    color: #F38383;
+    transition: all .3s;
+
+}
+
+
+
+/* End Get In Touch */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start info  */
+
+.info  {
+
+    background-color: #222222;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.info .top{
+ 
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #DC3545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    /* top: 0%; */
+    margin: 0 auto;
+    font-size: 18px;
+    cursor: pointer !important;
+    transition: all 0.3s;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+
+
+
+}
+
+
+
+.mybtn{
+    display: block;
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    font-size: 13px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    transition: all 0.4s;
+    opacity: 70%;
+    
+}
+
+.mybtn:hover ,
+.MakeHov:hover,
+.name:hover
+{
+    color:#F36C6C ;
+    border-color: #F36C6C;
+    transition: all 0.4s;
+}
+
+/* End info */
+
+
+
+
+
+
+
+
+/* Start Footer */
+
+.copyright{
+    text-align: right;
+    line-height: 2;
+}
+
+.widgets{
+    line-height: 2;
+    word-spacing: 20px;
+}
+
+footer{
+    background-color: #1A1A1A;
+    position: relative;
+    
+}
+
+
+
+/* End Footer */
+
+/* Start client review */
+
+.blog .carousel-indicators [data-bs-target] {
+    text-indent: unset;
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    overflow: hidden;
+    
+}
+
+
+.blog .carousel-inner{
+    margin-bottom: 85px;
+}
+
+
+
+/* End client review */
+
+
+
+
+
+
+
+
+
+
+
+
